@@ -6,6 +6,18 @@
         <link rel="stylesheet" type="text/css" href="{% static 'css/style.css' %}">
     </head>
     <body>
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="ms-auto">
+                <a href="{% url 'login'%}" class="btn btn-outline-light me-1">Login</a>
+            </div>
+            <div class="ms-auto">
+                <a href="{% url 'logout'%}" class="btn btn-outline-light me-1">Logout</a>
+            </div>
+            <div class="ms-auto">
+                <a href="{% url 'signup'%}" class="btn btn-outline-light me-1">Signup</a>
+            </div>
+
+        </nav>
         <div class="my-5 text-center container">
             {% block content %}
             {% endblock %}
